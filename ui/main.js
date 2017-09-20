@@ -9,5 +9,5 @@ var img = document.getElementById('mod');
 
 img.onClick = function (){
     
-    img.Style.marginRight = '400px';
+    img.Style.MarginRight = '400px';
 }

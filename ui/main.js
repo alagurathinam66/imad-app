@@ -6,8 +6,16 @@ element.innerHTML = 'new value';
 
 //move the image
 var img = document.getElementById('mod');
+var marginLeft =0;
 
+
+function moveRight (){
+    marginLeft = marginLeft + 10;
+    img.style.marginLeft = marginLeft + 'px';
+    
+}
 img.onClick = function (){
     
-    img.Style.MarginRight = '400px';
-}
+    var interval = setInterval(moveRight, 150);
+    img.Style.marginRight = '400px';
+};
